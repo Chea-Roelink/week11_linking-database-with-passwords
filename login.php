@@ -36,12 +36,15 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <header>
         <h2>Webpages.inc - The Webpage - Log in</h2>
     </header>
-    <form method="post" action="process.php">
+    <form method="post" action="profile.php">
         <label for="username">Username:</label>
         <input type="text" name="username" required><br>
 
         <label for="password">Password:</label>
         <input type="password" name="password" required><br>
+
+        <label for="email">email:</label>
+        <input type="text" name="email" required><br>
 
         <input type="hidden" name="token" value="abc123">
         <input type="submit" name="Login">
